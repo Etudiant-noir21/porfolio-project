@@ -1,5 +1,6 @@
 *{
 box-sizing: border-box;
+border: 1px solid red;
     padding: 0;
     margin: 0;
     outline: 0;
@@ -14,9 +15,9 @@ body{
     /* width: 80%; */
 }
 header{
-    margin: auto;
-    padding: 30px 0px;
-    margin-top: 30px;
+    /* margin: auto; */
+    /* padding: 30px 0px; */
+    /* margin-top: 30px; */
     background-color: #cccccc;
     min-height: 100vh;
     background-image: url(images.jpg);
@@ -24,7 +25,7 @@ header{
     background-size: cover;
 }
 .header-content{
-    margin: 0 40px;
+    /* margin: 0 40px; */
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -42,6 +43,7 @@ header{
     gap: 20px;
     align-items: center;
 }
+
 .middle{
     display: flex;
     gap: 20px;
@@ -59,16 +61,12 @@ header p{
     color: aliceblue;
 }
 .cv-dowload{
-    text-align: right;
-    margin-right: 1rem;
-    margin-top: 2rem;
+    text-align: end;
     padding: 1.5rem;
+   
     
 }
-.cv-dowload:hover{
-    transform: scale(0.95);
 
-}
 .cv-dowload a{
     background-color: #ffad01;
     padding: 1rem;
@@ -132,8 +130,8 @@ padding: 5px;
 }
 .social-side a{
     background-color: #99a1a6;
-    padding: 10px;
-    border-radius: 50%;
+    padding: 1.5rem;
+    border-radius: 70%;
     /* flex-shrink: 1; */
 }
 .social-side a:hover{
@@ -323,22 +321,31 @@ padding: 5px;
 .radial-bar .pourcentage{
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 27%;
+    text-align: center;
     transform: translate(-5%, -5%);
     font-size: 13px;
     text-align: center;
     font-weight: 600;
 
 }
+.pourcentage div{
+    font-size: 10px;
+    font-weight: 200;
+}
+.level div{
+    font-size: 10px;
+    font-weight: 200;
+}
 .radial-bar .level{
     position: absolute;
     top: 50%;
-    left: 25%;text-align: center;
+    left: 35%;text-align: center;
     transform: translate(-5%, -5%);
-    font-weight: 500;
+    font-weight: 600;
 }
 .experience{
-    padding: 0 50px;
+    padding: 10px 50px;
     display: flex;
     justify-content: space-between;
     background-color: #28023d;
@@ -510,9 +517,11 @@ footer p{
   .radial-bars{
      display: grid;
      grid-template-columns: 1fr;
+   
   }
+  
 }
-@media screen and (min-width:401px) and (max-width:700px) {
+@media screen and (min-width:401px) and (max-width:1180px) {
     .footer-content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -557,16 +566,11 @@ footer p{
         display: grid;
         grid-template-columns:1fr 1fr;
     }
-    .infos-education{
-        border: none;
+    .radial-bar .pourcentage{
+        left: 30%;
     }
-    .infos-education .master::before{
-        display: none;
+    .radial-bar .level{
+        left: 40%;
     }
-    .infos-education .course::before{
-        display: none;
-    }
-    .infos-education .graduted::before{
-        display: none;
-    }
+   
 }
