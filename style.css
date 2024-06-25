@@ -145,7 +145,7 @@ padding: 5px;
     padding: 30px 0;
 }
 .grid-photo{
-    /* padding: 30px 0; */
+    padding: 30px 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
@@ -447,7 +447,7 @@ footer p{
   color: #fff;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
     header{
         width: 100%;
         margin: auto;
@@ -461,6 +461,9 @@ footer p{
        flex-direction: column;
        gap: 10px;
        font-size: 3vh;
+    }
+    .portfolio ul{
+        flex-direction: column;
     }
     .portfolio-infos ul{
         width: 100%;
@@ -519,9 +522,9 @@ footer p{
      grid-template-columns: 1fr;
    
   }
-  
 }
-@media screen and (min-width:401px) and (max-width:1180px) {
+
+@media screen and (min-width:601px) and (max-width:1024px) {
     .footer-content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -567,10 +570,10 @@ footer p{
         grid-template-columns:1fr 1fr;
     }
     .radial-bar .pourcentage{
-        left: 30%;
+        left: 35%;
     }
     .radial-bar .level{
-        left: 40%;
+        left: 50%;
     }
    
 }
