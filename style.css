@@ -127,13 +127,19 @@ padding: 5px;
 }
 .social-side a{
     background-color: #99a1a6;
-    padding: 1.5rem;
+    /* padding: 1rem; */
     /* border: 1px solid; */
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
     /* flex-shrink: 1; */
+}
+.social-side a i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
 }
 .social-side a:hover{
     background-color: #ffad01;
