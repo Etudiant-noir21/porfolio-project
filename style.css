@@ -521,9 +521,13 @@ footer{
     .infos-education .graduted::before{
         display: none;
     }
+    footer{
+        height: auto;
+    }
     .footer-content{
     flex-direction: column;gap: 3vh;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
+
     }
   .radial-bars{
      display: grid;
